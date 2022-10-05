@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en" xmlns:image-rendering="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+    <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
+    <style>
+    * {
+        font-family: 'Gowun Dodum', sans-serif;
+    }
+
+    .mytitle{
+
+    width: 100%;
+    height: 250px;
+
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("data:image/jpeg;base64,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");
+    background-position: center;
+    background-size: cover;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+<!--    div안 요소들 정렬-->
+
+    }
+    .mypost {
+        max-width: 500px;
+        width: 95%;
+
+        margin: 20px auto 0px auto;
+
+        box-shadow: 0px 0px 3px 0px gray;
+        padding: 20px;
+<!--        박스 그림자 효과-->
+    }
+    .buttons {
+      margin-top : 10px;
+    }
+
+    .card {
+    max-width: 500px;
+    width: 95%;
+
+    margin: 20px auto 0px auto;
+
+    }
+
+    </style>
+</head>
+
+<body>
+                                                <div class="mytitle" style=""image-rendering: pixelated;>
+    <h1>경서예지 팬명록</h1>
+</div>
+
+<div class="mypost">
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">닉네임</label>
+    </div>
+
+    <div class="form-floating">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                  style="height: 100px"></textarea>
+        <label for="floatingTextarea2">응원댓글</label>
+    </div>
+
+    <div class="buttons">
+        <button type="button" class="btn btn-dark">응원 남기기</button>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <blockquote class="blockquote mb-0">
+            <p>새로운 앨범 너무 멋져요!</p>
+            <footer class="blockquote-footer">호빵맨</footer>
+        </blockquote>
+    </div>
+</div>
+<div class="card">
+    <div class="card-body">
+        <blockquote class="blockquote mb-0">
+            <p>새로운 앨범 너무 멋져요!</p>
+            <footer class="blockquote-footer">호빵맨</footer>
+        </blockquote>
+    </div>
+</div>
+<div class="card">
+    <div class="card-body">
+        <blockquote class="blockquote mb-0">
+            <p>새로운 앨범 너무 멋져요!</p>
+            <footer class="blockquote-footer">호빵맨</footer>
+        </blockquote>
+    </div>
+</div>
+
+</body>
+
+</html>
